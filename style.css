@@ -14,6 +14,7 @@
 
 .navigation ul {
     display: flex;
+    transition: all 0.5s ease;
 }
 
 .navigation ul li {
@@ -46,6 +47,21 @@
     font-size: 35px;
 }
 
+#click{
+    display: none;
+}
+.btn {
+    display: none;
+    color: white;
+}
+
+#click:checked ~ ul{
+    left: 0;
+}
+
+#click:checked ~ .btn i::before{
+    content: '\f00d';
+}
 /* hero area code start */
 header{
     background-image: url(./image/website\ banner.jpg);
@@ -75,4 +91,142 @@ header{
     border-radius: 4px;
     border: 2px solid pink;
     padding: 4px 20px;
+}
+
+/* main section start */
+
+main{
+    background-color: rgb(7, 7, 41);
+    padding-top: 20px;
+}
+
+#main-section {
+    width: 1100px;
+    margin:auto;
+    padding: 50px 0;
+}
+.latest-video-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-video-text{
+    font-size: 20px;
+    color: #fff;
+}
+
+.latest-page {
+    color: #fff;
+}
+
+.latest-page span{
+    color: black;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    margin:0 8px;
+}
+.div{
+    background-color: blue;
+    width: 400px;
+    height: 3px;
+}
+
+.single-items-parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    margin-top: 30px;
+}
+.single-items{
+    height:250px ;
+    border: 2px solid rgb(179, 176, 176);
+}
+.single-items >img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+   
+}
+.single-items div{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(172, 165, 165);
+    margin-top:10px;
+    
+}
+.single-items:hover img{
+    transform: scale(1.1);
+   
+}
+
+.single-items:hover img{
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:688px) {
+   /* navigation part responsive */
+    .navigation{
+        padding: 10px 50px;
+    }
+    .navigation ul{
+        position: fixed;
+        top: 60px;
+        background-color: blanchedalmond;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        flex-direction: column;
+        text-align: center;
+        color: brown;
+    }
+    .navigation ul li a{
+        color: brown;
+    }
+    .btn {
+        display: block;
+    }
+
+    /* hero area responsive  */
+
+    .search-icon-perent input{
+        width: 90%;
+        
+    }
+ 
+    .search-icon-perent{
+        margin: 0 20px;
+    }
+
+
+     /*  page area responsive */
+    #main-section {
+        width: 90%;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+
+    .latest-video-text {
+        font-size: 13px;
+    }
+   /* single item responsive */
+   .single-items-parent{
+    display: block;
+   }
+   .single-items {
+    height: 250px;
+    border: 2px solid rgb(179, 176, 176);
+    margin-bottom: 15px;
+}
 }
