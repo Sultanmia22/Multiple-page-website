@@ -7,9 +7,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: rgb(10, 10, 62);
+    background-color: rgba(10, 10, 62, 0.982);
     padding: 10px 100px;
     border-bottom: 2px solid rgb(12, 91, 161);
+   position: sticky;
+   top: 0;
 }
 
 .navigation ul {
@@ -299,7 +301,7 @@ footer{
    .single-items {
     height: 250px;
     border: 2px solid rgb(179, 176, 176);
-    margin-bottom: 15px;
+    margin-bottom: 37px;
 }
 /* next page  */
 .previous-next-perent div a {
