@@ -3,6 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* navigaton code start */
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: rgba(10, 10, 62, 0.982);
+    padding: 10px 100px;
+    border-bottom: 2px solid rgb(12, 91, 161);
+   position: sticky;
+   top: 0;
+}
+
+.navigation ul {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin: 10px 5px;
+}
+
+
+.navigation ul li  a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 19px;
+    border-radius: 4px ;
+    transition: 0.5s;
+}
+.logo {
+    color: white;
+    font-size: 20px;
+}
+
+.navigation ul li  a:hover{
+       color: red;  
+       background-color: rgb(97, 50, 15);  
+}
+
+.logo-span {
+    color: rgb(210, 71, 12);
+    font-size: 35px;
+}
+
+
+/* navigation code end */
 .article-container > h2{
     color: #22a6b3;
     font-size: 30px;
